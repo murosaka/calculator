@@ -4,42 +4,45 @@ body {
     min-height: 50vh;
   }
 
-  .container {
+.container {
     display:flex;
     flex-direction: column;
-    justify-content: space-evenly;
-  }
+}
 
-  #display {
+#display {
     border: 1px solid #eee;
     box-shadow: 2px 4px 16px rgba(0,0,0,.06);
     border-radius: 4px;
     padding: 16px;
-    margin: 2px;
+    /* margin: 2px; */
     margin-top: 16px;
     font-size: 24px;
     font-weight: bold;
     flex:1;
     text-align: right;
-  }
+}
 
-  #row1, #row2, #row2, #row3, #row4, #row5, #row6 {
+.row {
     display:flex;
     flex-direction: row;
-    justify-content:space-around;
+    justify-content:space-evenly;
     /* flex:1 0; */
     padding: 0px;
-    margin: 2px;
+    /* margin: 2px; */
     margin-left:16px;
     margin-right:16px;
     max-width: 1000px;
-  }
+}
 
-  button {
-    border: 2px solid #eee;   
-    border-radius: 4px;
+button {
+    border: 2px solid #eeeeee;   
+    /* border-radius: 4px; */
     padding: 16px;
-    margin: 2px;
-    flex:1;
+    /* margin: 2px; */
+    flex:0 1 25%;
     font-size: 18px;     
-  }
+}
+
+#clear {
+    flex:2;
+}
